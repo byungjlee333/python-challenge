@@ -48,8 +48,8 @@ with open(csvpath, newline='') as csvfile:
 
 
 
-print(f'Financial Analysis'+'\n')
-print(f'----------------------------'+'\n')
+print(f'Financial Analysis \n')
+print(f'---------------------------- \n')
 
 
 print("Total number of months: " + str(len(month)))
