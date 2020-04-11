@@ -48,16 +48,22 @@ with open(csvpath, newline='') as csvfile:
 
 
 
-print(f'Financial Analysis \n')
-print(f'---------------------------- \n')
 
+output = (
+f'Financial Analysis \n'
+f'---------------------------- \n'
 
-print("Total number of months: " + str(len(month)))
+f"Total number of months: " + str(len(month)
 
-print("Total Revenue in period: $ " + str(total_revenue))
+f"Total Revenue in period: $ " + str(total_revenue)
       
-print("Average monthly change in Revenue : $" + str(monthly_change))
+f"Average monthly change in Revenue : $" + str(monthly_change)
 
-print(f"Greatest Increase in Profits: {month_increase} (${profit_increase})")
+f"Greatest Increase in Profits: {month_increase} (${profit_increase})"
 
-print(f"Greatest Decrease in Profits: {month_decrease} (${profit_decrease})")
+f"Greatest Decrease in Profits: {month_decrease} (${profit_decrease})")
+
+print(output)
+
+with open(file_to_output, "w") as txt_file:
+    txt_file.write(output)
